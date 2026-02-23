@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found | GoSeal Notary</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    .not-found {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 3rem 1.5rem;
+    }
+    .not-found__inner { max-width: 480px; }
+    .not-found__code {
+      font-size: clamp(5rem, 15vw, 8rem);
+      font-family: var(--font-serif);
+      color: var(--navy);
+      line-height: 1;
+      margin-bottom: .5rem;
+    }
+    .not-found h1 { margin-bottom: .75rem; }
+    .not-found p { color: var(--text-muted); margin-bottom: 2rem; }
+    .not-found__actions { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: center; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo" aria-label="GoSeal Notary — home">
+      <img src="/assets/logo.svg" alt="GoSeal Notary" width="160" height="40" />
+    </a>
+  </div>
+</nav>
+
+<main id="main">
+  <div class="not-found">
+    <div class="not-found__inner">
+      <div class="not-found__code" aria-hidden="true">404</div>
+      <h1>Page Not Found</h1>
+      <p>
+        Oops! The page you're looking for doesn't exist or may have moved.
+        Let's get you back on track.
+      </p>
+      <div class="not-found__actions">
+        <a href="/" class="btn btn--primary">← Back to Home</a>
+        <a href="tel:+14070000000" class="btn btn--outline">📞 Call Us</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-bottom" style="margin-top:0;padding-top:0;border-top:none;">
+      <span>&copy; <span id="current-year">2025</span> GoSeal Notary · Oviedo, FL</span>
+      <span><a href="tel:+14070000000" style="color:rgba(255,255,255,.7);">(407) 000-0000</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var y = document.getElementById('current-year');
+  if (y) y.textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
