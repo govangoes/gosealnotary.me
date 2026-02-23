@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 72" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">GoSeal Notary logo</title>
+  <desc id="logoDesc">A circular seal icon with a document and checkmark next to the words GoSeal Notary.</desc>
+  <defs>
+    <linearGradient id="sealGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#133453" />
+      <stop offset="100%" stop-color="#0d2840" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(8 8)">
+    <circle cx="28" cy="28" r="26" fill="url(#sealGradient)" />
+    <circle cx="28" cy="28" r="21" fill="none" stroke="#56c2bc" stroke-width="1.6" />
+    <rect x="18" y="14" width="20" height="26" rx="2.5" fill="#f8fafc" />
+    <line x1="21" y1="20" x2="35" y2="20" stroke="#9bb1c4" stroke-width="1.3" />
+    <line x1="21" y1="25" x2="35" y2="25" stroke="#9bb1c4" stroke-width="1.3" />
+    <path d="M22 33 L27 38 L35 29" fill="none" stroke="#1d847e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <text x="74" y="35" font-family="Manrope, Arial, sans-serif" font-size="30" font-weight="800" fill="#0d2840">GoSeal</text>
+  <text x="76" y="54" font-family="Manrope, Arial, sans-serif" font-size="17" font-weight="600" letter-spacing="2" fill="#1d847e">NOTARY</text>
+</svg>
