@@ -9,11 +9,18 @@ Static, mobile-first website for **GoSeal Notary** (Oviedo, FL), built with plai
 - `script.js` - Contact form progressive enhancement
 - `404.html` - Branded not found page
 - `thanks.html` - Post-submit confirmation page
+- `site.webmanifest` - Web app manifest and icon mapping
 - `robots.txt` - Search crawler directives
 - `sitemap.xml` - XML sitemap for the main URL
 - `CNAME` - Custom domain for GitHub Pages
-- `assets/logo.svg` - Placeholder logo
-- `assets/favicon.svg` - Favicon
+- `assets/goseal-logo.png` - Primary transparent logo (social/schema image)
+- `assets/goseal-logo-256h.png` - Header logo asset
+- `assets/goseal-logo-128h.png` - Alternate smaller logo asset
+- `assets/goseal-favicon.ico` - Browser favicon
+- `assets/goseal-icon-192.png` - App/icon asset (192x192)
+- `assets/goseal-icon-512.png` - App/icon asset (512x512)
+- `assets/logo.svg` - Legacy logo (kept for rollback)
+- `assets/favicon.svg` - Legacy favicon (kept for rollback)
 
 ## Run Locally
 
@@ -93,6 +100,17 @@ Important first-run behavior:
 - You must confirm that email before submissions start delivering normally.
 
 To change recipient or success redirect later, edit the hidden fields in `index.html`.
+
+## Branding Assets
+
+Header/logo and icon references are configured in `index.html`, `404.html`, `thanks.html`, `privacy.html`, `terms.html`, and `disclaimer.html`.
+
+If you replace logo files later:
+
+1. Upload new assets in `assets/`.
+2. Update the header image path in `index.html`.
+3. Update favicon/app icon links in each page head.
+4. Keep `site.webmanifest` icon entries in sync with your icon files.
 
 ## Updating SEO Metadata Later
 

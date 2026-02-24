@@ -170,11 +170,26 @@ ul {
 .brand {
   display: inline-flex;
   align-items: center;
+  gap: 0.55rem;
+  color: var(--color-navy-900);
+  text-decoration: none;
+  min-width: 0;
 }
 
-.brand img {
-  width: clamp(11rem, 40vw, 16rem);
-  height: auto;
+.brand-logo {
+  height: 56px;
+  width: auto;
+  display: block;
+  flex: 0 0 auto;
+}
+
+.brand-text {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  max-width: 11ch;
 }
 
 .nav-list {
@@ -442,6 +457,16 @@ textarea {
 @media (min-width: 48rem) {
   .header-inner {
     min-height: 5.25rem;
+  }
+
+  .brand-logo {
+    height: 72px;
+  }
+
+  .brand-text {
+    font-size: 1.05rem;
+    max-width: none;
+    white-space: nowrap;
   }
 
   .nav-list {
