@@ -394,6 +394,24 @@ textarea {
   text-align: center;
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1rem;
+  margin-top: var(--space-3);
+}
+
+.footer-links a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  text-decoration: underline;
+}
+
 .privacy-note {
   color: #c4d0dd;
   font-size: 0.9rem;
@@ -401,8 +419,19 @@ textarea {
 
 .not-found-page {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.not-found-page main {
+  flex: 1;
+  width: 100%;
   display: grid;
   place-items: center;
+}
+
+.not-found-page .site-footer {
+  width: 100%;
 }
 
 .not-found-card {
