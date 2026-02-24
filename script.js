@@ -17,7 +17,7 @@
     }
 
     if (href.startsWith("mailto:")) {
-      trackEvent("email_click", { email: href.replace("mailto:", "") });
+      trackEvent("email_click", { type: "mailto" });
     }
   });
 
