@@ -170,26 +170,40 @@ ul {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.55rem;
+  gap: 0.5rem;
   color: var(--color-navy-900);
   text-decoration: none;
   min-width: 0;
 }
 
 .brand-logo {
-  height: 56px;
+  height: 44px;
   width: auto;
   display: block;
   flex: 0 0 auto;
 }
 
 .brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  line-height: 1;
+}
+
+.brand-line {
+  display: block;
   font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  max-width: 11ch;
+  letter-spacing: 0.01em;
+}
+
+.brand-line-secondary {
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-slate-700);
 }
 
 .nav-list {
@@ -460,12 +474,15 @@ textarea {
   }
 
   .brand-logo {
-    height: 72px;
+    height: 56px;
   }
 
-  .brand-text {
-    font-size: 1.05rem;
-    max-width: none;
+  .brand-line {
+    font-size: 1rem;
+  }
+
+  .brand-line-secondary {
+    font-size: 0.72rem;
     white-space: nowrap;
   }
 
