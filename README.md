@@ -6,8 +6,9 @@ Static, mobile-first website for **GoSeal Notary** (Oviedo, FL), built with plai
 
 - `index.html` - Main one-page site
 - `styles.css` - Global site styles
-- `script.js` - Contact form mailto enhancement
+- `script.js` - Contact form progressive enhancement
 - `404.html` - Branded not found page
+- `thanks.html` - Post-submit confirmation page
 - `robots.txt` - Search crawler directives
 - `sitemap.xml` - XML sitemap for the main URL
 - `CNAME` - Custom domain for GitHub Pages
@@ -69,6 +70,29 @@ After DNS propagates, in **Settings > Pages**:
 - Confirm `https://gosealnotary.me/sitemap.xml` is accessible.
 - Verify links (`tel`, `mailto`, nav anchors).
 - Test layout on mobile and desktop widths.
+
+## Form Submissions (FormSubmit)
+
+The contact form posts to FormSubmit with this endpoint:
+
+```text
+https://formsubmit.co/govangoes@gmail.com
+```
+
+Configured hidden fields:
+
+- `_honey` (honeypot field for spam reduction)
+- `_captcha=true` (FormSubmit captcha enabled)
+- `_subject=New GoSeal Notary Request`
+- `_next=https://gosealnotary.me/thanks.html`
+
+Important first-run behavior:
+
+- After deployment, submit the form once from production.
+- FormSubmit sends a confirmation/verification email to the recipient inbox.
+- You must confirm that email before submissions start delivering normally.
+
+To change recipient or success redirect later, edit the hidden fields in `index.html`.
 
 ## Updating SEO Metadata Later
 
